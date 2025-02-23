@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Webpage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+      
+
+  <!-- Hero Section -->
+
+
+  <header class="header">
+    <div class="logo">
+      <h1>47<sup>th</sup> cafe</h1>
+    </div>
+  
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">This Is Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#order">Order Online</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  
+    <div class="actions">
+      <a href="#login" class="action-btn">Log In</a>
+      <a href="#cart" class="action-btn">Cart (0)</a>
+    </div>
+  </header>
+
+  <header class="hero">
+    <div class="hero-content">
+
+    </div>
+  </header>
+
+  
+  
+ <!-- pop-up window -->
+   <div class="modal" id="orderModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h2>How would you like to receive your order?</h2>
+      <div class="tab-container">
+        <button class="tab active" onclick="switchTab('pickup')">Pickup</button>
+        <button class="tab" onclick="switchTab('delivery')">Delivery</button>
+      </div>
+      <div id="pickup" class="tabcontent" style="display: block;">
+        <p><strong>Pickup from:</strong></p>
+        <p>San Francisco, CA, USA</p>
+
+        <p><strong>When:</strong></p>
+        <label><input type="radio" name="pickup-time" checked> Up to 30 minutes</label><br>
+        <label><input type="radio" name="pickup-time"> Schedule for later</label>
+    </div>
+
+      <div class="delivery-input" id="deliveryInput">
+        <label for="address">Deliver to:</label>
+        <input type="text" id="address" placeholder="Type in your delivery address">
+      </div>
+      <button class="save-btn">Save</button>
+    </div>
+  </div>
+  <button onclick="openModal()">Open Order Options</button> 
+  
+  <div class= " d-flex " >
+  <div class="menu-selection">
+    <label for="menu-dropdown"></label>
+    <select id="menu-dropdown">
+      <option>Drinks</option>
+      <option>All Day Every Day</option>
+    </select>
+  </div>
+
+  <div class="menu-tabs">
+    <a href=" #coffeeee " class = "cooffee"> Coffee </a> 
+    <a href =" #special " class = "cooffee"> Specialty Drinks </a>
+  </div>
+</div>
+
+  <div id="coffeeee"> 
+    <h2>Coffee</h2>
+  <div class="container text-center">
+    <section class="menu">
+  <div class="row">
+    <div class="col">
+      <div class="menu-item">
+        <h2>Espresso</h2>
+        <p>A shot of rich, concentrated coffee.</p>
+        <p class="price">$3.00</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="menu-item">
+        <h2>Americano</h2>
+        <p>Espresso diluted with hot water.</p>
+        <p class="price">$4.00</p>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="menu-item">
+          <h2>Latte</h2>
+          <p>Espresso with steamed milk and a light layer of foam.</p>
+          <p class="price">$6.00</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="menu-item">
+          <h2>Cappuccino</h2>
+          <p> Equal parts espresso, steamed milk, and foam.</p>
+          <p class="price">$6.00</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="menu-item">
+            <h2> Macchiato</h2>
+            <p>Espresso "marked" with a dollop of foam or milk.</p>
+            <p class="price">$6.00</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="menu-item">
+            <h2>Flat White</h2>
+            <p>Espresso with steamed milk, less frothy than a latte.</p>
+            <p class="price">$8.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div Id="special">
+  <h1> Specialty Drinks</h1>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="menu-item">
+              <h2>Chai Latte</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$3.00</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="menu-item">
+              <h2>Matcha Latte</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$3.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="menu-item">
+                <h2>Golden Latte</h2>
+                <p>A shot of rich, concentrated coffee.</p>
+                <p class="price">$3.00</p>
+              </div>
+            </div>
+            <div class="col">
+                
+            </div>
+            </div>
+          </div>
+
+            
+            <h1> All Day Every Day </h1>
+            <h2> Bakery</h2>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="menu-item">
+                  <h2> Croissant (Plain/Chocolate)</h2>
+                  <p> I am a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.</p>
+                  <p class="price">$6.00</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="menu-item">
+                  <h2>Daily Muffin</h2>
+                  <p> I am a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.</p>
+                  <p class="price">$6.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <div class="menu-item">
+                    <h2> Cheesecake</h2>
+                    <p> I am a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.</p>
+                    <p class="price">$6.00</p>
+                  </div>
+              </div>
+              <div class="col">
+                
+              </div>
+              </div>
+
+
+    <h1> All-Day Breakfast </h1>
+
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="menu-item">
+              <h2>Granola & Greek Yogurt</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$12.00</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="menu-item">
+              <h2>Chia Pudding</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$12.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="menu-item">
+              <h2>Superfood Acai Bowl</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$12.00</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="menu-item">
+              <h2>Avocado Toast</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$12.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="menu-item">
+              <h2>Eggs Benedict</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$12.00</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="menu-item">
+              <h2> Bacon & Eggs on Rye</h2>
+              <p>A shot of rich, concentrated coffee.</p>
+              <p class="price">$12.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="menu-item">
+                <h2> Spinach & Salmon Brioche</h2>
+                <p>A shot of rich, concentrated coffee.</p>
+                <p class="price">$12.00</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="menu-item">
+                <h2> Smoked Salmon Bagel</h2>
+                <p>A shot of rich, concentrated coffee.</p>
+                <p class="price">$12.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="menu-item">
+                  <h2> Green Shakshuka</h2>
+                  <p>A shot of rich, concentrated coffee.</p>
+                  <p class="price">$12.00</p>
+                </div>
+              </div>
+              <div class="col">
+        
+                </div>
+              </div>
+            </div>
+
+            
+          </section>
+
+
+
+  <footer class=" text-light ">
+        <div class="cont">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Stay up to date with all the latest from 47th Cafe</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" class="form-control" required
+                                oninvalid="this.setCustomValidity('Enter an email address like example@mysite.com')"
+                                oninput="this.setCustomValidity('')">
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="subscribe">
+                                <label class="form-check-label" for="subscribe">
+                                    Yes, subscribe me to your newsletter
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Join</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="col-md-4">
+                    <h5>Talk to Us</h5>
+                    <div class="d-flex flex-column">
+                        <span class="mb-2">123-456-7890</span>
+                        <div class="info"> <a href="#"> <span class="mb-2">info@mysite.com</span> </a> </div>
+                        <span class="mb-2">500 Terry Francine St.</span>
+                        <span class="mb-2">San Francisco, CA 94158</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/wix/#" class="text-light">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/wix" class="text-light">Facebook</a></li>
+                        <li><a href="https://x.com/wix" class="text-light">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="contr">
+        <p class="mb-0">© 2035 by 47th Cafe . Powered and secured by
+            <a href="https://www.wix.com/?utm_campaign=vir_created_with">Wix</a>
+        </p>
+    </div>
+
+
+
+    <script src="script.js"> </script>
+</body>
+</html>
