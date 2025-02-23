@@ -1,0 +1,127 @@
+*
+{
+  box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+
+  }
+  .navbar{
+  background-color: rgb(242,222,198);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.logo{
+  font-size: 110%;
+}
+.profile{
+  width: 5%;
+}
+.containr{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: -100;
+}
+.containr img{
+  vertical-align: middle;
+}
+.us{
+  text-align: center;
+  background-color: rgb(255, 244, 233);
+  padding-bottom: 110px;
+}
+.this{
+  padding-top: 100px;
+  font-weight: 700;
+}
+.us p{
+  font-weight: 600;
+  font-family: inherit;
+}
+.containr .content{
+position: absolute;
+bottom: 0;
+background:rgba(0, 0, 0, 0.5);
+color: white;
+width: 100%;
+padding: 20px;
+height: 100%;
+text-align: center;
+padding-top: 50%;
+}
+.sec{
+  text-align: center;
+  background-color: rgb(255, 244, 233);
+  height: 400px;
+  width: 100%;
+}
+.i{
+  padding-bottom: 65px;
+}
+.row{
+  width: 100%;
+  margin: 15px;
+}
+.col{
+  height: 80px;
+}
+footer{
+  height: 400px;
+  background-color: rgb(58,70,56);
+}
+.intro_contact{
+
+  text-align: center;
+  background-color: rgb(255, 244, 233);
+  width: 100%;
+  height: 300px;
+  padding-top: 125px;
+}
+.link{
+  color: black;
+}
+.font{
+  font-family:inherit;
+font-weight: 700;
+font-size: 300%;
+text-decoration: none;
+}
+.face{
+  width: 7%;
+}
+.mail{
+  text-decoration: none;
+  color: black;
+
+}
+footer button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 35px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+footer button:hover {
+  background-color: rgb(58,70,56);
+
+}
+.middle{
+  background-color: darkgray;
+  font-size:1.8em;
+  text-align: center;
+  padding-top:42px ;
+  height: 120px;
+  width: 100%;
+
+}
